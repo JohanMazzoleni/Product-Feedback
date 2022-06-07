@@ -1,0 +1,86 @@
+.aside {
+	@apply fixed z-10 w-[271px] h-full top-[72px] right-[-271px] duration-200 bg-[#F7F8FD];
+	@apply md:relative md:duration-[0ms] md:mx-auto md:justify-between md:top-0 md:flex md:left-0 md:w-[689px] md:mt-14;
+	@apply 2xl:flex-col 2xl:mx-0 2xl:w-auto 2xl:mt-0 2xl:gap-y-[24px];
+
+	.websiteName {
+		@apply hidden w-56 pl-6 h-44 rounded-[10px] bg-[url('/assets/suggestions/tablet/background-header.png')] bg-cover;
+		@apply md:block;
+		@apply 2xl:w-[255px] 2xl:h-[137px] 2xl:bg-[url('/assets/suggestions/desktop/background-header.png')];
+
+		.title {
+			@apply text-xl text-white font-bold mt-[103px] tracking-[-0.25px];
+			@apply 2xl:mt-[62px];
+		}
+
+		.subTitle {
+			@apply text-sm text-[#ffffffc2] font-medium;
+		}
+	}
+
+	.filter {
+		@apply w-56 h-44 pt-6 pl-6 mx-auto mt-6 flex flex-wrap content-start gap-x-2 gap-y-[14px] bg-white rounded-[10px];
+		@apply md:mx-0 md:mt-0;
+		@apply 2xl:w-[255px];
+
+		.tags {
+			@apply flex cursor-pointer items-center h-[30px] px-4 text-[13px] rounded-[10px] font-semibold text-[#4661E6] bg-[#F2F4FF];
+
+			&:hover {
+				@apply bg-[#CFD7FF] text-[#4661E6] duration-200;
+			}
+		}
+
+		.active {
+			background: #4661e6 !important;
+			color: white !important;
+		}
+	}
+
+	.roadmap {
+		@apply mt-6 w-56 h-44 px-6 rounded-[10px] bg-white mx-auto;
+		@apply md:mx-0 md:mt-0;
+		@apply 2xl:w-[255px];
+
+		.head {
+			@apply flex justify-between items-center pt-5;
+			.title {
+				@apply text-[18px] font-bold text-[#3A4374];
+			}
+
+			.view {
+				@apply underline font-semibold text-[13px] text-[#4661E6];
+
+				&:hover {
+					@apply text-[#8397F8];
+				}
+			}
+		}
+
+		.stateList {
+			@apply mt-4 flex flex-col gap-2;
+			.state {
+				@apply flex justify-between;
+
+				.left {
+					@apply flex items-center gap-4;
+					.dot {
+						@apply w-2 h-2 rounded-full;
+					}
+
+					.leftTitle {
+						@apply text-[#647196] text-[16px] font-normal;
+					}
+				}
+
+				.right {
+					@apply text-[16px] text-[#647196] font-bold;
+				}
+			}
+		}
+	}
+}
+
+.active {
+	@apply right-0;
+}

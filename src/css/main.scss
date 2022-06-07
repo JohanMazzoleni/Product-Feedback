@@ -1,0 +1,30 @@
+.threadList {
+	@apply w-[90%] max-w-[327px] mx-auto mt-8 mb-14 flex flex-col gap-4;
+	@apply md:max-w-full md:w-[689px];
+	@apply 2xl:mx-0 2xl:w-[825px];
+}
+
+.emptyThread {
+	@apply w-[327px] h-[460px] rounded-[10px] mx-auto mt-8 bg-white;
+	@apply md:w-[689px] md:h-[600px] md:mb-[54px];
+	@apply 2xl:w-[825px];
+
+	.title {
+		@apply text-center mt-10 font-bold text-[18px] text-[#3A4374] tracking-[-0.25px];
+		@apply md:text-[24px] md:tracking-[-0.33px];
+	}
+
+	.description {
+		@apply mt-3 w-[278px] text-center mx-auto font-normal text-[13px] text-[#647196];
+		@apply md:text-[16px] md:w-[410px];
+	}
+
+	.btnFeedback {
+		@apply cursor-pointer select-none w-[134px] h-10 flex justify-center items-center font-bold bg-[#AD1FEA] text-[13px] rounded-[10px];
+		@apply md:w-[158px] md:h-[44px] md:text-[14px];
+
+		&:hover {
+			@apply bg-[#C75AF6];
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.comment {
+	@apply w-full text-[#647196] px-6;
+	@apply md:w-[689px];
+
+	.commentTop {
+		@apply flex justify-between;
+		.left {
+			@apply flex;
+			.avatar {
+				@apply w-[40px] h-[40px] rounded-full;
+			}
+
+			.details {
+				@apply ml-4 flex flex-col;
+				@apply md:ml-8;
+				.name {
+					@apply tracking-[-0.19px] font-bold text-[#3A4374] text-[13px];
+					@apply md:text-[14px];
+				}
+
+				.username {
+					@apply text-[13px];
+					@apply md:text-[14px];
+				}
+			}
+		}
+
+		.right {
+			@apply text-[13px] cursor-pointer font-semibold text-[#4661e6];
+		}
+	}
+
+	.commentContent {
+		@apply text-[13px] mt-4 pb-6;
+		@apply md:pl-[72px] md:text-[15px];
+	}
+}

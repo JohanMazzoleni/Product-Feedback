@@ -1,0 +1,28 @@
+.filter {
+	@apply h-14 px-6 bg-[#373F68] flex justify-between items-center;
+	@apply md:w-[689px] md:mx-auto md:rounded-[10px] md:h-[72px] md:mt-10;
+	@apply 2xl:mt-0 2xl:w-[825px];
+
+	.suggestion {
+		@apply hidden font-bold text-[18px] items-center gap-2;
+		@apply 2xl:flex;
+	}
+
+	.filterText {
+		@apply cursor-pointer text-[13px] select-none;
+		@apply text-[14px];
+
+		.active {
+			@apply rotate-180;
+		}
+	}
+
+	.btnFeedback {
+		@apply cursor-pointer select-none w-[134px] h-10 flex justify-center items-center font-bold bg-[#AD1FEA] text-[13px] rounded-[10px];
+		@apply md:text-[14px] md:w-[158px] md:h-[44px];
+
+		&:hover {
+			@apply bg-[#C75AF6];
+		}
+	}
+}

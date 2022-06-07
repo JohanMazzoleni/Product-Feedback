@@ -1,0 +1,66 @@
+.thread {
+	@apply relative h-52 rounded-[10px] bg-white;
+	@apply md:flex md:flex-wrap md:h-[151px];
+
+	.upvote {
+		@apply hidden;
+		@apply md:text-[13px] md:flex md:mt-7 md:ml-8 md:flex-col md:gap-1 md:items-center md:justify-center md:select-none md:tracking-[-0.18px] md:w-[40px] md:h-[53px] md:cursor-pointer md:font-bold md:rounded-[10px] md:text-[#3A4374] md:bg-[#F2F4FE];
+
+		&:hover {
+			@apply bg-[#CFD7FF];
+		}
+	}
+
+	.activeUpVote {
+		background: #4661e6 !important;
+		color: white !important;
+
+		svg {
+			path {
+				stroke: white;
+			}
+		}
+	}
+
+	.threadTitle {
+		@apply w-[278px] pt-6 mx-auto text-[13px] font-bold text-[#3A4374];
+		@apply md:pt-7 md:text-lg md:w-[373px] md:mx-0;
+	}
+
+	.threadContent {
+		@apply w-[278px] mx-auto mt-1 text-[#647196] font-normal text-[13px];
+		@apply md:w-[373px] md:mx-0 2xl:w-[476px] 2xl:text-[16px];
+	}
+
+	.tagList {
+		@apply w-[278px] mx-auto;
+		@apply md:w-[373px] md:mx-0;
+
+		.btn-tags {
+			@apply mt-2 w-28 h-8 rounded-[10px] flex justify-center text-sm items-center font-semibold text-[#4661E6] bg-[#F2F4FF];
+		}
+	}
+
+	.bottom {
+		@apply flex justify-between w-[278px] mx-auto mt-4;
+		@apply md:w-auto md:mx-0 md:ml-32;
+		@apply 2xl:ml-[263px];
+
+		.upvote {
+			@apply select-none md:hidden w-[69px] cursor-pointer flex items-center gap-3 justify-center font-bold h-8 rounded-[10px] text-[#3A4374] bg-[#F2F4FE];
+
+			&:hover {
+				@apply bg-[#CFD7FF];
+			}
+		}
+
+		.activeUpVote {
+			background: #4661e6 !important;
+			color: white !important;
+		}
+
+		.comment {
+			@apply select-none absolute right-8 top-1/2 -translate-y-1/2 flex gap-2 items-center text-[#3A4374] font-bold;
+		}
+	}
+}

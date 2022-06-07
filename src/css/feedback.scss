@@ -1,0 +1,69 @@
+.container {
+	@apply w-[90%] max-w-[327px] mt-6 mx-auto;
+	@apply md:w-[689px] md:max-w-full md:mt-14;
+	@apply 2xl:mt-20 2xl:w-[730px];
+
+	.top {
+		@apply flex justify-between items-center;
+		.goBack {
+			@apply text-[#647196] font-bold text-[13px];
+			@apply md:text-[14px];
+
+			&:hover {
+				@apply text-[#647196] underline;
+			}
+		}
+
+		.btn {
+			@apply cursor-pointer w-[119px] h-[40px] font-bold text-[13px] flex justify-center items-center bg-[#4661e6] text-[#F2F4FE] rounded-[10px];
+			@apply md:text-[14px];
+
+			&:hover {
+				@apply text-[#F2F4FE] bg-[#7C91F9];
+			}
+		}
+	}
+
+	.commentSection {
+		@apply mt-6 pb-6 rounded-[10px] w-full bg-white;
+
+		.titleSection {
+			@apply ml-[23.5px] pt-6 pb-6 text-[18px] font-bold text-[#3a4374];
+		}
+	}
+
+	.commentAddComment {
+		@apply mt-6 mb-[88px] pt-6 px-6 rounded-[10px] w-full text-[#647196] bg-white;
+		.formTitle {
+			@apply font-bold text-[#3A4374] text-[18px] tracking-[-0.25px];
+		}
+
+		.formArea {
+			@apply mt-6 w-[279px] h-[80px] resize-none rounded-[5px] p-4 bg-[#F7F8FD];
+			@apply md:w-[623px] md:text-[15px];
+			border: 1px solid #f7f8fd;
+
+			&::placeholder {
+				@apply text-[#8C92B3];
+			}
+
+			&:active {
+				border: 1px solid #4661e6;
+			}
+		}
+
+		.bottom {
+			@apply pb-4 mt-4 flex justify-between items-center;
+
+			.charLeft {
+				@apply text-[#647196] text-[13px];
+				@apply text-[15px];
+			}
+
+			.btn {
+				@apply cursor-pointer text-[13px] w-[119px] h-[40px] flex justify-center items-center rounded-[10px] bg-[#AD1FEA] text-[#F2F4FE] font-bold;
+				@apply md:text-[14px];
+			}
+		}
+	}
+}

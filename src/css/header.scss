@@ -1,0 +1,22 @@
+.header {
+	@apply bg-[url('/assets/suggestions/mobile/background-header.png')];
+	@apply z-50 fixed top-0 left-0 w-full text-white flex justify-between h-[72px] px-6 items-center;
+	@apply md:hidden;
+	background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #e84d70 0%, #a337f6 53.09%, #28a7ed 100%);
+
+	.left {
+		.title {
+			@apply tracking-[-0.19px] text-[15px] font-bold;
+		}
+
+		.subTitle {
+			@apply text-[13px] font-medium;
+		}
+	}
+
+	.right {
+		.burgerMenu {
+			@apply cursor-pointer w-5 h-4;
+		}
+	}
+}
